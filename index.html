@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leica M3 · Mechanische Zeitlosigkeit</title>
+  <!-- Favicon für den Browser-Tab -->
+  <link rel="icon" type="image/png" href="../../Library/CloudStorage/OneDrive-Persönlich/_Studium/_Fachhochschule%20Graubünden/_1_Semester/Interaktvie%20Medien/Leica%20M3/Background+Shadow.png">
+  <link rel="stylesheet" href="../../Library/CloudStorage/OneDrive-Persönlich/_Studium/_Fachhochschule%20Graubünden/_1_Semester/Interaktvie%20Medien/Leica%20M3/styles.css">
+  <script src="../../Library/CloudStorage/OneDrive-Persönlich/_Studium/_Fachhochschule%20Graubünden/_1_Semester/Interaktvie%20Medien/Leica%20M3/script.js" defer></script>
+</head>
+<body>
+
+<!-- Globale Kopfzeile -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand-group" id="nav-brand">
+      <img src="../../Library/CloudStorage/OneDrive-Persönlich/_Studium/_Fachhochschule%20Graubünden/_1_Semester/Interaktvie%20Medien/Leica%20M3/Background+Shadow.png" alt="Leica Red Dot" class="brand-dot-img">
+      <span class="brand-title">Leica M3</span>
+      <span class="brand-sep">·</span>
+      <span class="brand-sub" id="header-page-title">Startseite</span>
+    </div>
+
+    <nav class="main-nav" id="desktop-nav">
+      <a href="#vita" class="nav-item">Über mich</a>
+      <a href="#objekt" class="nav-item">Objekt</a>
+      <a href="#sucher" class="nav-item">Sucher</a>
+      <a href="#physik" class="nav-item">Physik</a>
+      <a href="#emulsion" class="nav-item">Emulsion</a>
+      <a href="#kontext" class="nav-item">Kontext</a>
+      <a href="#kontakt" class="nav-item">Kontakt</a>
+      <button class="nav-item btn-link" id="btn-to-impressum-nav">Impressum</button>
+    </nav>
+
+    <div class="header-right">
+      <span class="film-counter">EXP 01/36</span>
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Design wechseln">
+        <span class="theme-label">Dunkel</span>
+        <span class="theme-dot"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ANSICHT 1: STARTSEITE -->
+<div id="view-main" class="page-view active">
+
+  <!-- HERO / OBJEKT -->
+  <section id="objekt" class="hero-block">
+    <div class="hero-light-layer"></div>
+    <div class="hero-inner">
+      <div class="camera-wrap">
+        <img src="../../Library/CloudStorage/OneDrive-Persönlich/_Studium/_Fachhochschule%20Graubünden/_1_Semester/Interaktvie%20Medien/Leica%20M3/Container.png" alt="Leica M3 Gehäuse" class="hero-camera-img">
+      </div>
+      <div class="hero-brand-tag">LEICA</div>
+      <h1 class="hero-title">Mechanische Zeitlosigkeit.</h1>
+      <p class="hero-subtitle">Leica M3 · 1954 · Bewege die Maus, um das Licht zu führen</p>
+    </div>
+  </section>
+
+  <!-- HAUPTINHALT (Exaktes 996px Figma-Raster) -->
+  <main class="page-container">
+
+    <!-- VITA / ÜBER MICH -->
+    <section id="vita" class="editorial-card">
+      <div class="section-tracker">Über mich &amp; Impressum</div>
+      <h2 class="card-headline">Vita.</h2>
+      <div class="vita-split">
+        <div class="vita-copy">
+          <p>Ich heisse <strong>Fabrizio Bühler</strong> und studiere seit September 2026 im Bachelorstudiengang Multimedia Production an der Fachhochschule Graubünden. Da ich vor dem Studium keinerlei Berührungspunkte mit Webdesign oder Programmierung hatte, stellte mich dieses Modul anfangs vor einige Herausforderungen.</p>
+          <p>Durch das autodidaktische Einarbeiten in Figma und die Grundlagen des Frontend-Designs fand ich jedoch schnell den roten Faden. Diese Website ist als Semesterprojekt im Modul Interaktive Medien 1 (IM1) entstanden. Für die Leica M3 habe ich mich ganz bewusst entschieden: Ich besitze dieses Modell selbst.</p>
+          <p>Während meiner Ausbildung zum Kommunikationsdesigner HF (Fachrichtung Fotografie) habe ich meine Leidenschaft für die analoge Fotografie und die Handabzüge in der Dunkelkammer entdeckt. Bis heute ist die M3 bei Streifzügen und Reisen im In- und Ausland mein treuer Begleiter.</p>
+        </div>
+        <div class="vita-portrait-wrapper">
+          <img src="../../Library/CloudStorage/OneDrive-Persönlich/_Studium/_Fachhochschule%20Graubünden/_1_Semester/Interaktvie%20Medien/Leica%20M3/IMG_5173.JPG" alt="Fabrizio Bühler" class="vita-portrait-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- SUCHER -->
+    <section id="sucher" class="editorial-card">
+      <div class="section-tracker">Optische Triangulation</div>
+      <h2 class="card-headline">Der 0,91×-Koinzidenzsucher.</h2>
+
+      <div class="viewfinder-enclosure">
+        <div class="viewfinder-monitor">
+          <div class="viewfinder-base-scene" style="background-image: url('../../Library/CloudStorage/OneDrive-Persönlich/_Studium/_Fachhochschule Graubünden/_1_Semester/Interaktvie Medien/Leica M3/scene_1.png');">
+            <!-- Koinzidenz-Patch mit Doppelbild -->
+            <div class="coincidence-patch">
+              <div class="ghost-image" id="ghost-image" style="background-image: url('../../Library/CloudStorage/OneDrive-Persönlich/_Studium/_Fachhochschule Graubünden/_1_Semester/Interaktvie Medien/Leica M3/scene_2.png');"></div>
+              <span class="patch-indicator">Doppelbild</span>
+            </div>
+
+            <!-- Leuchtrahmen 50 / 90 / 135 mm -->
+            <div class="finder-frame frame-50 active" id="vf-frame-50"><span>50 mm</span></div>
+            <div class="finder-frame frame-90" id="vf-frame-90"><span>90 mm</span></div>
+            <div class="finder-frame frame-135" id="vf-frame-135"><span>135 mm</span></div>
+          </div>
+        </div>
+
+        <div class="viewfinder-bar">
+          <div class="bar-left">
+            <span class="speed-label">1/500</span>
+            <label for="focus-slider" class="slider-label">Entfernungsring drehen</label>
+            <input type="range" id="focus-slider" min="-28" max="28" value="-16" class="range-ring">
+          </div>
+          <div class="bar-right">
+            <span class="frameline-label">Leuchtrahmen</span>
+            <div class="frameline-group">
+              <button class="vf-btn active" data-focal="50">50 mm</button>
+              <button class="vf-btn" data-focal="90">90 mm</button>
+              <button class="vf-btn" data-focal="135">135 mm</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="section-explanation">
+        Beide Bilder stammen aus demselben Szenenmodell. Das gelbe Feld verschiebt eine Kopie, bis die Kanten (Laternenmast) zur Deckung kommen – genau wie im echten Messsucher. Der Leuchtrahmen wechselt wie bei der M3 mit der Brennweite.
+      </p>
+    </section>
+
+    <!-- PHYSIK & SUNNY 16 (2 SPALTEN) -->
+    <div id="physik" class="two-col-grid">
+
+      <section class="editorial-card column-card">
+        <div class="section-tracker">Physische Parameter</div>
+        <h3 class="column-headline">Effektive Messbasis</h3>
+        <p class="column-lead">Die effektive Basislänge ist die physische Basis <em>b</em> multipliziert mit der Suchervergrösserung <em>M</em>:</p>
+        <div class="spec-formula">
+          <code>69,25 mm &times; 0,91 &approx; <strong>63,0 mm</strong></code>
+        </div>
+        <p class="column-lead">Das ist eine der längsten Messbasen der M-Serie und erlaubt präzises Fokussieren auch bei lichtstarken Optiken.</p>
+
+        <div class="parameter-table">
+          <div class="param-row"><span>Physische Basis</span><span>69,25 mm</span></div>
+          <div class="param-row"><span>Vergrösserung</span><span>0,91× (beidäugiges Sehen)</span></div>
+          <div class="param-row"><span>Leuchtrahmen</span><span>50 / 90 / 135 mm</span></div>
+          <div class="param-row"><span>Verschluss</span><span>Tuchschlitz, 1 s – 1/1000 s, B</span></div>
+          <div class="param-row"><span>Anschluss</span><span>Leica-M-Bajonett</span></div>
+        </div>
+        <div class="table-footnote">Werte bitte vor Abgabe mit einer Quelle belegen (z. B. Leica-Archiv).</div>
+      </section>
+
+      <section class="editorial-card column-card">
+        <div class="section-tracker">Interaktive Matrix</div>
+        <h3 class="column-headline">Sunny-16-Kalkulator</h3>
+        <p class="column-lead">Ohne Belichtungsmesser: Bei Sonne gilt Blende 16 und Verschlusszeit &approx; 1/ISO. Mit schwächerem Licht öffnest du die Blende.</p>
+
+        <div class="calculator-inputs">
+          <div class="input-cell">
+            <label for="calc-light">Lichtsituation</label>
+            <select id="calc-light" class="custom-select">
+              <option value="16">Praller Sonnenschein (f/16)</option>
+              <option value="11">Leicht bewölkt (f/11)</option>
+              <option value="8" selected>Bedeckt (f/8)</option>
+              <option value="5.6">Schatten (f/5.6)</option>
+              <option value="4">Dämmerung (f/4)</option>
+            </select>
+          </div>
+          <div class="input-cell">
+            <label for="calc-iso">Film-ISO</label>
+            <select id="calc-iso" class="custom-select">
+              <option value="100">100</option>
+              <option value="400" selected>400</option>
+              <option value="800">800</option>
+              <option value="1600">1600</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="calculator-display">
+          <div class="display-main" id="calc-result-text">f/8 · 1/500 s · LW 13 (ISO 100)</div>
+          <div class="display-sub">1/ISO = 1/400 &rarr; nächste Stufe: 1/500 s</div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- EMULSION: KODAK TRI-X 400 -->
+    <section id="emulsion" class="editorial-card film-section-card">
+      <div class="section-tracker">Silberhalogenid-Kristalle</div>
+      <h2 class="card-headline">Kodak Tri-X 400.</h2>
+
+      <div class="filmstrip-row">
+
+        <div class="film-negative-card">
+          <div class="film-negative-edge">&#9650; 18 &middot; KODAK 400TX</div>
+          <div class="negative-window">
+            <img src="../../Library/CloudStorage/OneDrive-Persönlich/_Studium/_Fachhochschule%20Graubünden/_1_Semester/Interaktvie%20Medien/Leica%20M3/scene_1.png" alt="Mikrokontrast" class="negative-image grain-std">
+          </div>
+          <h4 class="negative-title">Mikrokontrast</h4>
+          <p class="negative-desc">Kubisches Korn, normal entwickelt.</p>
+        </div>
+
+        <div class="film-negative-card">
+          <div class="film-negative-edge">&#9650; 19 &middot; SAFETY FILM</div>
+          <div class="negative-window">
+            <img src="../../Library/CloudStorage/OneDrive-Persönlich/_Studium/_Fachhochschule%20Graubünden/_1_Semester/Interaktvie%20Medien/Leica%20M3/scene_2.png" alt="Dynamikumfang" class="negative-image grain-soft">
+          </div>
+          <h4 class="negative-title">Dynamikumfang</h4>
+          <p class="negative-desc">Weicher Verlauf, viel Zeichnung.</p>
+        </div>
+
+        <div class="film-negative-card">
+          <div class="film-negative-edge">&#9650; 20 &middot; PUSH +2</div>
+          <div class="negative-window">
+            <img src="../../Library/CloudStorage/OneDrive-Persönlich/_Studium/_Fachhochschule%20Graubünden/_1_Semester/Interaktvie%20Medien/Leica%20M3/scene_3.png" alt="Forcierte Entwicklung" class="negative-image grain-pushed">
+          </div>
+          <h4 class="negative-title">Forcierte Entwicklung</h4>
+          <p class="negative-desc">Grobes Korn, harter Kontrast.</p>
+        </div>
+
+      </div>
+
+      <p class="section-explanation">
+        Simulation: Schwarzweiss, Kontrast und Korn werden per SVG-Filter aus einer Szene berechnet – keine echten Tri-X-Scans.
+      </p>
+    </section>
+
+    <!-- KONTEXT & RECHTLICHE ANGABEN (2 SPALTEN) -->
+    <div id="kontext" class="two-col-grid">
+
+      <section class="editorial-card column-card">
+        <div class="section-tracker">Modul Interaktive Medien 1</div>
+        <h3 class="column-headline">Didaktische Konzeption</h3>
+        <p class="column-lead">Die Seite verbindet dynamisches Relighting, physikalisch korrekte Simulationen und eine reduzierte Editorial-Ästhetik.</p>
+        <div class="parameter-table">
+          <div class="param-row"><span>Institution</span><span>FH Graubünden (FHGR)</span></div>
+          <div class="param-row"><span>Studiengang</span><span>BSc Multimedia Production</span></div>
+          <div class="param-row"><span>Modul</span><span>IM1, HS 2026</span></div>
+          <div class="param-row"><span>Technik</span><span>HTML · CSS · SVG · Web Audio</span></div>
+        </div>
+      </section>
+
+      <section class="editorial-card column-card">
+        <div class="section-tracker">Impressum</div>
+        <h3 class="column-headline">Rechtliche Angaben</h3>
+        <div class="parameter-table">
+          <div class="param-row"><span>Urheber:in</span><span>Fabrizio Bühler</span></div>
+          <div class="param-row"><span>Institution</span><span>Fachhochschule Graubünden</span></div>
+          <div class="param-row"><span>Standort</span><span>Pulvermühlestrasse 57, 7000 Chur</span></div>
+          <div class="param-row"><span>Kontakt</span><span>fabrizio.buehler@students.fhgr.ch</span></div>
+          <div class="param-row"><span>Copyright</span><span>&copy; 2026 FHGR</span></div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="editorial-card">
+      <div class="section-tracker">Dunkelkammer-Service</div>
+      <h2 class="card-headline">Kontakt.</h2>
+      <form id="contact-form" class="editorial-contact-form">
+        <div class="form-grid-two">
+          <div class="form-input-group">
+            <label for="form-name">Name</label>
+            <input type="text" id="form-name" value="Henri Cartier-Bresson" class="form-field-input" required>
+          </div>
+          <div class="form-input-group">
+            <label for="form-email">E-Mail</label>
+            <input type="email" id="form-email" value="henri@example.com" class="form-field-input" required>
+          </div>
+        </div>
+        <div class="form-grid-two">
+          <div class="form-input-group">
+            <label for="form-film">Film</label>
+            <input type="text" id="form-film" value="Kodak Tri-X 400 (35 mm)" class="form-field-input">
+          </div>
+          <div class="form-input-group">
+            <label for="form-developer">Entwickler</label>
+            <input type="text" id="form-developer" value="Kodak D-76 (1:1)" class="form-field-input">
+          </div>
+        </div>
+        <div class="form-input-group full-width-group">
+          <label for="form-instructions">Anweisungen</label>
+          <input type="text" id="form-instructions" value="z. B. +1 Blende pushen" class="form-field-input">
+        </div>
+        <div class="form-action-row">
+          <button type="submit" class="form-submit-btn">Auftrag absenden</button>
+          <span class="form-disclaimer-text">Demo-Formular: Es werden keine Daten übertragen.</span>
+        </div>
+        <div id="form-feedback" class="form-feedback-banner"></div>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <button class="footer-impressum-action" id="btn-to-impressum-footer">Impressum</button>
+      <span class="footer-copyright">&copy; 2026 Fabrizio Bühler · FHGR IM1</span>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ANSICHT 2: IMPRESSUM (VOLLBILD) -->
+<div id="view-impressum" class="page-view">
+  <main class="page-container impressum-canvas">
+    <h1 class="impressum-title">Impressum</h1>
+
+    <section class="impressum-section">
+      <h3>Verantwortlich für den Inhalt:</h3>
+      <p class="impressum-bold">Fabrizio Bühler</p>
+      <p>E-Mail: <a href="mailto:fabrizio.buehler@students.fhgr.ch">fabrizio.buehler@students.fhgr.ch</a></p>
+      <p>Popers 15, 9493 Mauren, Liechtenstein</p>
+    </section>
+
+    <section class="impressum-section">
+      <h3>Kontext der Veröffentlichung:</h3>
+      <p>Diese Website entstand als Leistungsnachweis im Modul Interaktive Medien 1 (IM1) an der Fachhochschule Graubünden (Institut für Multimedia Production, MMP).</p>
+    </section>
+
+    <section class="impressum-section">
+      <h3>Haftungsausschluss:</h3>
+      <p>Trotz sorgfältiger inhaltlicher Kontrolle wird keine Haftung für die Inhalte externer Links übernommen. Für den Inhalt der verlinkten Seiten sind ausschliesslich deren Betreiber verantwortlich.</p>
+    </section>
+
+    <section class="impressum-section">
+      <h3>Urheberrecht &amp; Markenschutz:</h3>
+      <p>Dies ist ein nicht-kommerzielles Bildungsprojekt. Sämtliche Rechte an den Markennamen, Modellbezeichnungen und Logos liegen bei der Leica Camera AG. Die verwendeten Fotografien, Grafiken und Texte dienen ausschliesslich redaktionellen und didaktischen Zwecken im Rahmen des Studiums. Eigene Fotografien: &copy; 2026 Fabrizio Bühler.</p>
+    </section>
+
+    <div class="impressum-action-bar">
+      <button class="btn-return-home" id="btn-back-home">&larr; Zurück zur Startseite</button>
+      <span class="footer-copyright">&copy; 2026 Fabrizio Bühler · FHGR IM1</span>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>
